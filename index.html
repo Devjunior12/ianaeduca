@@ -1,109 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IA na Educação</title>
+    
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
         header {
-            background-color: #3b5998;
-            color: white;
+            background: #000000;
+            color: #fff;
             padding: 1rem 0;
             text-align: center;
         }
-        .container {
-            width: 80%;
-            margin: 2rem auto;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        .section {
-            background-color: white;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #333;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background: #000000;;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 10px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #000000;;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+    
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
-            color: #3b5998;
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .section img {
-            width: 100%;
-            border-radius: 8px;
+
+        .section-content div {
+            flex: 1;
+            min-width: 280px;
         }
-        footer {
-            background-color: #3b5998;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
+        footer a{
+            color:#c41515;
         }
     </style>
 </head>
+<!-- parte css do menu-->
 <body>
     <header>
-        <h1>IA na Educação</h1>
+        <h1>IA na Educação
+        </h1>
     </header>
     <div class="container">
-        <div class="section">
-            <h2>O que é IA na Educação?</h2>
-            <p>A Inteligência Artificial (IA) na educação refere-se ao uso de algoritmos e software para personalizar o aprendizado, melhorar a administração escolar e auxiliar professores e alunos.</p>
-            <img src="http://patrocinados.estadao.com.br/techvisionbrasil/wp-content/uploads/sites/14/2017/08/iStock-673815180.jpg" alt="IA na educação">
-        </div>
-        <div class="section">
-            <h2>Aplicações da IA na Educação</h2>
-            <p>A IA é usada em diversas áreas da educação, incluindo:</p>
-            <ul>
-                <li>Personalização do aprendizado</li>
-                <li>Assistência aos professores</li>
-                <li>Automatização de tarefas administrativas</li>
-                <li>Desenvolvimento de conteúdos educacionais</li>
-                <li>Avaliações e feedback automatizados</li>
-            </ul>
-           <img src="" alt="IA na educação">
-        </div>
-        <div class="section">
+        <section id="home">
+            <h2>Bem-vindo</h2>
+            <div class="image-container">
+                <img src="imagem2.jpg" alt="IA na Educação">
+            </div>
+            <p>A inteligência artificial (IA) está revolucionando o setor educacional, trazendo novas oportunidades para personalizar a aprendizagem e melhorar os resultados dos estudantes.</p>
+        </section>
+        <section id="beneficios">
             <h2>Benefícios da IA na Educação</h2>
-            <p>A adoção de IA na educação oferece inúmeros benefícios, tais como:</p>
-            <ul>
-                <li>Personalização do ensino para cada aluno</li>
-                <li>Melhoria na eficiência dos professores</li>
-                <li>Automatização de tarefas administrativas</li>
-                <li>Feedback imediato e detalhado para os alunos</li>
-                <li>Maior acesso a recursos educativos de alta qualidade</li>
-            </ul>
-         <img src="" alt="IA na educação">
-        </div>
-        <div class="section">
-            <h2>Desafios e Considerações</h2>
-            <p>Embora a IA traga muitos benefícios, existem desafios a serem enfrentados, incluindo:</p>
-            <ul>
-                <li>Privacidade e segurança de dados dos alunos</li>
-                <li>Bias e equidade nos algoritmos de aprendizagem</li>
-                <li>Interoperabilidade entre diferentes sistemas educacionais</li>
-                <li>Adequação e aceitação pelos professores</li>
-                <li>Regulamentação e conformidade com as políticas educacionais</li>
-            </ul>
-             <img src="" alt="IA na educação">
-        </div>
-        <div class="section">
-            <h2>Futuro da IA na Educação</h2>
-            <p>O futuro da IA na educação é promissor, com várias tendências e avanços esperados:</p>
-            <ul>
-                <li>Integração de IA com realidade aumentada e virtual para experiências de aprendizado imersivas</li>
-                <li>Desenvolvimento de tutores inteligentes que oferecem suporte personalizado</li>
-                <li>Uso de análise de aprendizado para melhorar currículos e métodos de ensino</li>
-                <li>Expansão do aprendizado baseado em projetos e competências</li>
-                <li>Aplicação de IA para prever e melhorar o desempenho dos alunos</li>
-            </ul>
-               <img src="" alt="IA na educação">
-        </div>
+            <div class="section-content">
+                <div>
+                    <h3>Personalização da Aprendizagem</h3>
+                    <p>Os sistemas de IA podem adaptar o conteúdo educacional às necessidades individuais dos alunos, proporcionando uma experiência de aprendizagem personalizada.</p>
+                </div>
+                <div>
+                    <h3>Avaliações Automáticas</h3>
+                    <p>A IA permite a avaliação automática de tarefas e exames, fornecendo feedback imediato para os alunos, ajudando-os a melhorar continuamente.</p>
+                </div>
+                <div>
+                    <h3>Assistentes Virtuais</h3>
+                    <p>Assistentes virtuais baseados em IA podem apoiar os alunos fora da sala de aula, respondendo a perguntas e orientando-os em suas tarefas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="desafios">
+            <h2>Desafios da IA na Educação</h2>
+            <div class="section-content">
+                <div>
+                    <h3>Privacidade e Segurança dos Dados</h3>
+                    <p>O uso de IA em educação levanta preocupações sobre a privacidade e a segurança dos dados dos alunos.</p>
+                </div>
+                <div>
+                    <h3>Desigualdade no Acesso</h3>
+                    <p>Nem todos os alunos têm acesso igual às tecnologias necessárias para aproveitar os benefícios da IA.</p>
+                </div>
+                <div>
+                    <h3>Dependência Excessiva</h3>
+                    <p>A dependência excessiva da tecnologia pode diminuir habilidades essenciais de pensamento crítico e resolução de problemas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="futuro">
+            <h2>O Futuro da IA na Educação</h2>
+            <div class="image-container">
+                <img src="imagem3.jpg" alt="Futuro da IA na Educação">
+            </div>
+            <p>A IA continuará a evoluir, proporcionando novas ferramentas e métodos para melhorar a educação. É essencial que educadores e formuladores de políticas se adaptem a essas mudanças para maximizar os benefícios da IA.</p>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2024 IA na Educação. Todos os direitos reservados.</p>
+        <p>
+            <a href="https://www.instagram.com/projeto_ia2024/"target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg></p>
+        </a>
     </footer>
 </body>
 </html>
